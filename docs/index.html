@@ -1,0 +1,286 @@
+<!DOCTYPE = html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <script src="https://use.fontawesome.com/9064bf3c37.js"></script>
+  <title>CS418 - Latebloomers</title>
+
+  <style>
+        body,
+    html,
+    section {
+      height: 100%
+    }
+
+    .dropdown-menu,
+    footer {
+      background-color: #343a40
+    }
+
+    .dropdown-menu {
+      border-style: solid;
+      border-width: 2px;
+      border-color: grey
+    }
+
+    .dropdown-item {
+      color: #4682b4
+    }
+
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+      color: #fff;
+      background-color: #343a40
+    }
+
+    .hover-target:hover i {
+      color: #222!important
+    }
+
+    .hoverinverse-target:hover {
+      color: #4682b4!important
+    }
+
+    section.masthead {
+      background-image: url(img/BBB.png);
+      background-size: cover;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+      font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase
+    }
+
+    section {
+      padding-top: 3.5em;
+      min-height: calc(100% - 3.5em);
+      padding-bottom: 3.5em;
+    }
+
+    section h2.section-heading {
+      color: #4682b4;
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 15px
+    }
+
+    section h3.section-subheading {
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 75px;
+      text-transform: none;
+      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    }
+
+    .text-primary {
+      color: #4682b4!important
+    }
+
+    .text-secondary {
+      color: #fff!important
+    }
+
+    .text-muted {
+      color: #000!important
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #505050
+    }
+
+    p {
+      line-height: 1.75
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center
+    }
+
+    span.copyright {
+      font-size: 90%;
+      line-height: 40px;
+      font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      color: #4682b4
+    }
+
+    ul.social-buttons li a:active,
+    ul.social-buttons li a:focus,
+    ul.social-buttons li a:hover {
+      background-color: #222!important
+    }
+
+    ul.social-buttons {
+      margin-bottom: 0
+    }
+
+    ul.social-buttons li a {
+      font-size: 20px;
+      line-height: 40px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      transition: all .3s;
+      color: #fff;
+      border-radius: 100%;
+      outline: 0;
+      background-color: #4682b4
+    }
+
+    .sample {
+      display: none
+    }
+
+    .nav-link:hover {
+      color: #4682b4!important;
+      border-color: #e9ecef #e9ecef #ddd
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button id="tablink" class="btn btn-secondary nav-link" type="button" style="background-color: transparent; border-color:none;" onclick="openTab(event, 'page1')">Latebloomers</button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <button id="tablink" class="btn btn-secondary nav-link" type="button" style="background-color: transparent; border-color:none;" onclick="openTab(event, 'Description')">Description</button>
+
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item dropdown navbar-right">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle nav-link" type="button" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="background-color: transparent; border-color: none;">
+              About
+            </button>
+            <div id="dropdownmenu" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
+              <a class="dropdown-item" target="_blank" href="https://github.com/Walden1995/CS418/">Repository</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="dropdown-header">About the Team</h6>
+              <a href="#" id="modalbutton1" class="dropdown-item" data-toggle="modal" data-target="#exampleModal">modal one</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Modals -->
+  <div id="modals">
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close hidden" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="bio"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a class="nav-link hidden" href="#">website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <section id="page1">
+    <h4 class="text-secondary">Latebloomers includes the following team-members:</h2>
+    <div id="fakedropmenu">
+
+    </div>
+  </section>
+  
+  <section id="Description">
+    <p>This is the project webpage for the group named latebloomers</p>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready( function(){
+        $("section").hide();
+        $("#Description").show();
+        loadContent();
+    });
+
+    function loadContent() {
+      $.get("team.json", function (data) {
+        $.each(data.data, function () {
+          if(this.name){
+            var node = $("#modalbutton1").clone();
+            node.removeClass("hidden");
+            node.attr('id', this.name.replace(/\s+/g, ''));
+            node.find("A").attr("data-target", "#" + this.name.replace(/\s+/g, ''));
+            node.text(this.name)
+            $("#dropdownmenu").append(node);
+            $("#fakedropmenu").append(node);
+            var modal = $("#exampleModal").clone();
+            modal.attr('id', this.name.replace(/\s+/g, ''));
+            modal.find(".modal-title").text(this.name);
+            if(this.text){
+              modal.find("p").text(this.text);
+            }
+            if(this.link){
+              modal.find("a").attr("href", this.link);
+              modal.find("a").removeClass("hidden");
+            }
+          }     
+        });
+      });
+    }
+    
+    function openTab(evt, tabName) {
+        $("section").hide();
+        $("#tablink").removeClass("active");
+        $('#' + tabName).show();
+        evt.currentTarget.className += " active";
+      }
+
+  </script>
+</body>
+</html>

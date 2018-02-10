@@ -1,0 +1,150 @@
+body,
+html,
+section {
+  height: 100%
+}
+
+.btn-secondary {
+  background: transparent;
+}
+
+.hover-target:hover i 
+{
+ color: #222 !important;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-weight:700;
+  font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-transform:uppercase
+}
+
+.text-primary
+{
+  color: steelblue!important
+}
+
+.text-secondary
+{
+  color: white!important
+}
+
+.text-muted
+{
+  color: black!important
+}
+
+body
+{
+  overflow-x:hidden;
+  font-family:'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-color: #212529;
+}
+
+p
+{
+  line-height:1.75
+}
+
+footer
+{
+  padding:25px 0;
+  text-align:center
+}
+
+footer span.copyright
+{
+  font-size:90%;
+  line-height:40px;
+  text-transform:none;
+  font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-transform:uppercase
+}
+
+ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover
+{
+  background-color:steelblue
+}
+
+ul.social-buttons
+{
+  margin-bottom:0
+}
+
+ul.social-buttons li a
+{
+  font-size:20px;
+  line-height:40px;
+  display:block;
+  width:40px;
+  height:40px;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  transition:all .3s;
+  color:#fff;
+  border-radius:100%;
+  outline:0;
+  background-color:#222
+}
+
+l.social-buttons
+{
+  margin-bottom:0
+}
+
+ul.social-buttons li a
+{
+  font-size:20px;
+  line-height:40px;
+  display:block;
+  width:40px;
+  height:40px;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  transition:all .3s;
+  color:#fff;
+  border-radius:100%;
+  outline:0;
+  background-color:#222
+}
+
+.sample{
+  display:none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-content {
+  background-color: #343a40;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+  border: 1px #777 solid;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.page{
+
+}
+
+section {
+  padding-top: 3.5em;
+  min-height: calc(100% - 3.5em);
+  padding-bottom: 3.5em;
+}
