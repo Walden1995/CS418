@@ -234,25 +234,25 @@
             var card = $("#examplecard").clone();
             card.removeClass("hidden");
             card.attr('id', this.name.replace(/\s+/g, ""));
-            card.find($(".card-title")).text(this.name);
-            card.find($(".card-text")).text(this.text);
+            card.find((".card-title")).text(this.name);
+            card.find((".card-text")).text(this.text);
             if(this.picture){
-              card.find($("img")).attr('href',this.picture);
+              card.find(("img")).attr('href',this.picture);
             }
             if(this.link){
-              card.find($("#lk")).attr('href',this.link).removeClass("hidden");
+              card.find(("#lk")).attr('href',this.link).removeClass("hidden");
             }
             if(this.fb){
-              card.find($("#fb")).attr('href',this.fb).removeClass("hidden");
+              card.find(("#fb")).attr('href',this.fb).removeClass("hidden");
             }
             if(this.tw){
-              card.find($("#tw")).attr('href',this.tw).removeClass("hidden");
+              card.find(("#tw")).attr('href',this.tw).removeClass("hidden");
             }
             if(this.gp){
-              card.find($("#gp")).attr('href',this.gp).removeClass("hidden");
+              card.find(("#gp")).attr('href',this.gp).removeClass("hidden");
             }
             if(this.li){
-              card.find($("#li")).attr('href',this.li).removeClass("hidden");
+              card.find(("#li")).attr('href',this.li).removeClass("hidden");
             }
 
             $("#teammembers").append(card);
