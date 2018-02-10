@@ -175,7 +175,7 @@
               <a class="dropdown-item" target="_blank" href="https://github.com/Walden1995/CS418/">Repository</a>
               <div class="dropdown-divider"></div>
               <h6 class="dropdown-header">About the Team</h6>
-              <a href="#" id="modalbutton1" class="dropdown-item" data-toggle="modal" data-target="#exampleModal">modal one</a>
+              <a href="#" id="modalbutton1" class="dropdown-item hidden" data-toggle="modal" data-target="#exampleModal">modal one</a>
             </div>
           </div>
         </li>
@@ -236,13 +236,16 @@
       $.get("team.json", function (data) {
         $.each(data.data, function () {
           if(this.name){
+            console.log(this.name);
             var node = $("#modalbutton1").clone();
+            console.log("cloned modal link");
             node.removeClass("hidden");
             node.attr('id', this.name.replace(/\s+/g, ''));
             node.find("A").attr("data-target", "#" + this.name.replace(/\s+/g, ''));
             node.text(this.name)
             $("#dropdownmenu").append(node);
             $("#fakedropmenu").append(node);
+
             var modal = $("#exampleModal").clone();
             modal.attr('id', this.name.replace(/\s+/g, ''));
             modal.find(".modal-title").text(this.name);
@@ -253,6 +256,8 @@
               modal.find("a").attr("href", this.link);
               modal.find("a").removeClass("hidden");
             }
+            
+            $("#modals").append(modal);
           }     
         });
       });
