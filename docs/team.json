@@ -1,9 +1,9 @@
 {
 "data":
 [
-{"name":"Stephen Walden","link":"https://walden1995.github.io/","text":"I started coding with computer related video games. I have been developing simple command line interfaces since the age of 14, and have been working on learning about technology ever since that time. Lately I have been working on several different items. You can see a sample of what I have been working on if you visit my website.", "picture":""},
-{"name":"", "link":"", "text":"", "picture":""},
-{"name":"", "link":"", "text":"", "picture":""},
-{"name":"", "link":"", "text":"", "picture":""}
+{"name":"Stephen Walden","link":"walden1995.github.io/","fb":"https://www.facebook.com/stephen.walden.100","li":"https://www.linkedin.com/in/stephen-3-walden","gp":"","tw":"","text":"I started coding with computer related video games. I have been developing simple command line interfaces since the age of 14, and have been working on learning about technology ever since that time. Lately I have been working on several different items. You can see a sample of what I have been working on if you visit my website.", "picture":"https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAAt4AAAAJDQzOGFhMGJhLTYyZjEtNGQwNi04ZjFhLTI0YmI4MTE1Mzc4Nw.jpg"},
+{"name":"", "link":"","li":"","fb":"","gp":"","tw":"", "picture":""},
+{"name":"", "link":"","li":"","fb":"","gp":"","tw":"", "picture":""},
+{"name":"", "link":"","li":"","fb":"","gp":"","tw":"", "picture":""}
 ]
 }
