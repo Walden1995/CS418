@@ -171,11 +171,14 @@
               aria-expanded="false" style="background-color: transparent; border-color: none;">
               About
             </button>
-            <div id="dropdownmenu" class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
               <a class="dropdown-item" target="_blank" href="https://github.com/Walden1995/CS418/">Repository</a>
               <div class="dropdown-divider"></div>
               <h6 class="dropdown-header">About the Team</h6>
-              <a href="#" id="modalbutton1" class="dropdown-item hidden" data-toggle="modal" data-target="#exampleModal">modal one</a>
+              <a href="#" id="modalbutton1" class="dropdown-item" data-toggle="modal" data-target="#exampleModal">modal one</a>
+              <div id="dropdownmenu">
+
+              </div>
             </div>
           </div>
         </li>
@@ -241,8 +244,8 @@
             console.log("cloned modal link");
             node.removeClass("hidden");
             node.attr('id', this.name);
-            var datatarget = "#" + this.name;
-            console.log(this.datatarget);
+            var datatarget = "#" + this.name.replace(/\s+/g, "");
+            console.log(datatarget);
             node.find("A").attr("data-target", datatarget);
             node.text(this.name);
             console.log(node);
@@ -250,14 +253,19 @@
             $("#fakedropmenu").append(node);
 
             var modal = $("#exampleModal").clone();
-            modal.attr('id', this.name);
+            modal.attr('id', this.name.replace(/\s+/g, ""));
+            console.log(modal);
             modal.find(".modal-title").text(this.name);
+            console.log(modal);
             if(this.text){
               modal.find("p").text(this.text);
+              console.log(modal);
             }
             if(this.link){
               modal.find("a").attr("href", this.link);
+              console.log(modal);
               modal.find("a").removeClass("hidden");
+              console.log(modal);
             }
             
             $("#modals").append(modal);
