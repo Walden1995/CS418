@@ -236,22 +236,22 @@
             card.attr('id', this.name.replace(/\s+/g, ""));
             card.find($(".card-title")).text(this.name);
             card.find($(".card-text")).text(this.text);
-            if(this.picture != ""){
+            if(this.picture){
               card.find($("img")).attr('href',this.picture);
             }
-            if(this.link != ""){
+            if(this.link){
               card.find($("#lk")).attr('href',this.link).removeClass("hidden");
             }
-            if(this.fb != ""){
+            if(this.fb){
               card.find($("#fb")).attr('href',this.fb).removeClass("hidden");
             }
-            if(this.tw != ""){
+            if(this.tw){
               card.find($("#tw")).attr('href',this.tw).removeClass("hidden");
             }
-            if(this.gp != ""){
+            if(this.gp){
               card.find($("#gp")).attr('href',this.gp).removeClass("hidden");
             }
-            if(this.li != ""){
+            if(this.li){
               card.find($("#li")).attr('href',this.li).removeClass("hidden");
             }
 
