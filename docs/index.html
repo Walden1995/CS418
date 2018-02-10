@@ -241,7 +241,9 @@
             console.log("cloned modal link");
             node.removeClass("hidden");
             node.attr('id', this.name.replace(/\s+/g, ''));
-            node.find("A").attr("data-target", "#" + this.name.replace(/\s+/g, ''));
+            var datatarget = "#" + this.name.replace(/\s+/g, '');
+            console.log(this.datatarget);
+            node.find("A").attr("data-target", datatarget);
             node.text(this.name)
             $("#dropdownmenu").append(node);
             $("#fakedropmenu").append(node);
