@@ -244,7 +244,8 @@
             var datatarget = "#" + this.name.replace(/\s+/g, '');
             console.log(this.datatarget);
             node.find("A").attr("data-target", datatarget);
-            node.text(this.name)
+            node.text(this.name);
+            console.log(node);
             $("#dropdownmenu").append(node);
             $("#fakedropmenu").append(node);
 
