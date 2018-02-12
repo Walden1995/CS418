@@ -237,10 +237,10 @@
             card.find((".card-title")).text(this.name);
             card.find((".card-text")).text(this.text);
             if(this.picture){
-              card.find(("img")).attr('href',this.picture);
+              card.find(("img")).attr('src',this.picture);
             }
             if(this.link){
-              card.find(("#lk")).attr('src',this.link).removeClass("hidden");
+              card.find(("#lk")).attr('href',this.link).removeClass("hidden");
             }
             if(this.fb){
               card.find(("#fb")).attr('href',this.fb).removeClass("hidden");
